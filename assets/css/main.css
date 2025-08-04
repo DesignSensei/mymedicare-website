@@ -7538,15 +7538,58 @@ img {
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        width: 50px;
-        height: 50px;
-        padding: 5px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;;
         display: flex !important;
-        overflow: hidden;
+        position: relative;
+        overflow: visible;
+        color: white !important;
     }
 
     .hamburger-menu-wrap.w--open {
         background-color: var(--transparent);
+    }
+    
+    .hamburger-menu-wrap svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        transform: scale(0.8);
+        transform-origin: center center;
+    }
+
+    .icon-burger {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    
+    .icon-close {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    
+    .hamburger-menu-wrap.w--open .icon-burger {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    
+    .hamburger-menu-wrap.w--open .icon-close {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    
+    .icon-burger,
+    .icon-close {
+        transition:transform .25s cubic-bezier(.65, -0.6, .35, 1.6),
+                    opacity .2s ease;
+    }
+        
+    .w-nav-button.w--open svg line:nth-child(3) {
+        transform: translateY(-4.5px) rotate(-45deg);
     }
 
     .nav-menu-wrap {

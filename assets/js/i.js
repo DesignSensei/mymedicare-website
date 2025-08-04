@@ -1,6 +1,6 @@
 function iceCream() {
   const icedCream = document.querySelector(".w-webflow-badge");
-  if (iceCream) {
+  if (icedCream) {
     icedCream.remove();
   }
 }
