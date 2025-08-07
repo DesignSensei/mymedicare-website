@@ -3869,7 +3869,7 @@ img {
 }
 
 .ticker-title {
-    color: #070707;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
@@ -5147,14 +5147,14 @@ img {
 .support-tabs-title {
     letter-spacing: -1.08px;
     width: 100%;
-    max-width: 372px;
+    max-width: 430px;
     margin-bottom: 14px;
     font-size: 36px;
     line-height: 110%;
 }
 
 .support-tabs-title._04 {
-    max-width: 300px;
+    max-width: 430px;
 }
 
 .support-tabs-details {
@@ -5502,7 +5502,6 @@ img {
 }
 
 .blog-rich-social {
-    grid-column-gap: 257px;
     grid-template-rows: auto;
     grid-template-columns: 1fr 5.78fr;
     grid-auto-columns: 1fr;
@@ -7334,7 +7333,8 @@ img {
 
     .team-social-icon {
         width: 100%;
-        max-width: 8px;
+        width: 24px;
+        height: 24px;
     }
 
     .partner-wrap {
@@ -7600,6 +7600,15 @@ img {
         align-items: flex-start;
         padding: 40px;
     }
+
+        .nav-menu-wrap {
+            grid-row-gap: 40px;
+            background-color: #013281;
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 40px;
+        }
 
     .nav-menu-wrapper {
         max-height: 90vh;
@@ -8501,6 +8510,10 @@ img {
     .cart-list {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .nav-button-wrap .desktop-button-2 {
+        display: none;
     }
 }
 
@@ -9464,6 +9477,10 @@ img {
 
     .apple-pay {
         height: 45px;
+    }
+
+    .nav-button-wrap .desktop-button-2 {
+        display: none;
     }
 }
 
